@@ -41,7 +41,7 @@ Socio Pedia is a MERN stack social media platform inspired by Instagram, designe
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/sociopedia.git
+   git clone https://github.com/Vaibhavkk435/sociopedia.git
    cd sociopedia
    ```
 
