@@ -1,140 +1,125 @@
-Socio Pedia
-Show Image <!-- If you have a logo -->
-Socio Pedia is a full-featured MERN stack social media platform designed specifically for coders and developers. Think of it as Instagram for the coding community - a place to share projects, snippets, and connect with fellow developers.
+# Socio Pedia
 
-You can view the project at : https://sociopediainsta.vercel.app/
+Socio Pedia is a MERN stack social media platform inspired by Instagram, designed specifically for coders and developers to connect and share their work.
 
-✨ Features
+**You can view the project at :** https://sociopediainsta.vercel.app/
+## Features
 
-User Authentication - Secure login and registration system
-Profile Management - Customize your developer profile
-Social Interactions - Follow users, like posts, and comment
-News Feed - Personalized feed based on who you follow
-Image Sharing - Post images of your projects and code
-Dark/Light Mode - Toggle between themes for comfortable viewing
-Responsive Design - Works seamlessly on mobile and desktop
+- User authentication & authorization with JWT
+- Create, like, and comment on posts
+- Follow/unfollow users
+- Personalized feed based on connections
+- Profile customization
+- Image upload and sharing
+- Responsive design for all devices
 
-🛠️ Technologies Used
-Frontend
+## Tech Stack
 
-React - UI library
-Vite - Next-generation frontend tooling
-Chakra UI - Component library for accessible UI
-Firebase - Cloud services and storage
-Framer Motion - Animation library
-Zustand - State management
-React Router - Navigation and routing
-React Icons - Icon library
+### Frontend
+- React with Vite
+- Chakra UI for components
+- Firebase for storage
+- Zustand for state management
+- React Router for navigation
+- Framer Motion for animations
 
-Backend
+### Backend
+- Node.js & Express.js
+- MongoDB with Mongoose
+- JWT for authentication
+- Bcrypt for password hashing
+- Multer for file uploads
 
-Node.js - JavaScript runtime
-Express.js - Web framework
-MongoDB - NoSQL database
-Mongoose - Object data modeling
-Bcryptjs - Password hashing
-JSON Web Token - Authentication
-Multer - File upload handling
-Dotenv - Environment variables
+## Installation
 
-📋 Prerequisites
+### Prerequisites
+- Node.js (v14.x or later)
+- MongoDB (local or Atlas)
+- npm or yarn
 
-Node.js (v14.x or later)
-MongoDB (local or Atlas connection)
-npm or yarn
+### Setup
 
-🚀 Installation and Setup
-Clone the Repository
-bashgit clone https://github.com/yourusername/sociopedia.git
-cd sociopedia
-Backend Setup
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/sociopedia.git
+   cd sociopedia
+   ```
 
-Navigate to the server directory:
-bashcd server
+2. Backend Setup
+   ```bash
+   # Navigate to server directory
+   cd server
+   
+   # Install dependencies
+   npm install
+   
+   # Configure environment variables
+   # Create .env file with:
+   # PORT=3001
+   # MONGO_URI=your_mongodb_connection_string
+   # JWT_SECRET=your_secret_key
+   
+   # Start server
+   npm start
+   ```
 
-Install dependencies:
-bashnpm install
+3. Frontend Setup
+   ```bash
+   # Navigate to client directory
+   cd client
+   
+   # Install dependencies
+   npm install
+   
+   # Start development server
+   npm run dev
+   ```
 
-Create a .env file with the following variables:
-PORT=3001
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+## Available Scripts
 
-Start the server:
-bashnpm start
+### Frontend
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
 
+### Backend
+- `npm start` - Start server
+- `npm run dev` - Start with nodemon
 
-Frontend Setup
+## Project Structure
 
-Navigate to the client directory:
-bashcd client
-
-Install dependencies:
-bashnpm install
-
-Create a .env file for Firebase and other configurations if needed.
-Start the development server:
-bashnpm run dev
-
-
-📜 Available Scripts
-Frontend
-
-npm run dev - Start development server at http://localhost:3000
-npm run build - Build for production to the dist folder
-npm run lint - Run ESLint to check code quality
-npm run preview - Preview production build locally
-
-Backend
-
-npm start - Start the server
-npm run dev - Start server with nodemon for auto-reloading
-
-📁 Project Structure
+```
 sociopedia/
-├── client/              # Frontend React application
+├── client/              # Frontend React app
 │   ├── public/          # Static files
-│   ├── src/             
-│   │   ├── assets/      # Images, fonts, etc.
-│   │   ├── components/  # Reusable UI components
-│   │   ├── pages/       # App pages/routes
-│   │   ├── hooks/       # Custom React hooks
-│   │   ├── store/       # Zustand state management
-│   │   ├── theme/       # Chakra UI theme customization
-│   │   ├── utils/       # Helper functions
-│   │   ├── App.jsx      # Main component
-│   │   └── main.jsx     # Entry point
-│   └── package.json     # Frontend dependencies
-└── server/              # Backend Node.js application
+│   └── src/             
+│       ├── assets/      # Images, fonts
+│       ├── components/  # UI components
+│       ├── pages/       # App pages
+│       ├── hooks/       # Custom hooks
+│       ├── store/       # Zustand store
+│       └── utils/       # Helper functions
+└── server/              # Backend Node.js app
     ├── controllers/     # Route controllers
     ├── models/          # MongoDB schemas
-    ├── routes/          # API routes
+    ├── routes/          # API endpoints
     ├── middleware/      # Custom middleware
-    ├── utils/           # Helper functions
-    ├── index.js         # Server entry point
-    └── package.json     # Backend dependencies
-📸 Screenshots
-<!-- Add actual screenshots of your application here -->
-Show Image
-Show Image
-🔐 Authentication Flow
+    └── index.js         # Server entry point
+```
 
-Registration with email and password
-JWT token generation upon login
-Token storage in local storage
-Protected routes with authentication middleware
+## Contributing
 
-🤝 Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/feature-name`)
+3. Commit changes (`git commit -m 'Add some feature'`)
+4. Push to branch (`git push origin feature/feature-name`)
+5. Open a Pull Request
 
-Fork the project
-Create your feature branch (git checkout -b feature/amazing-feature)
-Commit your changes (git commit -m 'Add some amazing feature')
-Push to the branch (git push origin feature/amazing-feature)
-Open a Pull Request
+## License
 
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-📧 Contact
-Your Name - your.email@example.com
-Project Link: https://github.com/yourusername/sociopedia
+This project is licensed under the MIT License.
+
+---
+
+Made by [Your Name](https://github.com/yourusername)
